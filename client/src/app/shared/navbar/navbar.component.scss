@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: #e0f2fe;  /* Light blue */
+  border-bottom: 1px solid #bae6fd;
   padding: 10px 16px;
 }
 
@@ -20,48 +20,29 @@
   display: inline-block;
   padding: 8px 12px;
   border-radius: 8px;
-  color: #1f2937;
+  color: #0c4a6e;
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.15s ease, color 0.15s ease;
 
   &:hover,
   &:focus {
-    background: #eef2ff;
-    color: #4f46e5;
-    outline: none;
+    background: #bae6fd;
+    color: #075985;
   }
 }
 
 .app-name {
   font-weight: 800;
-  color: #111827;
-  background: #f3f4f6;
+  color: #082f49;
+  background: #bae6fd;
 
-  &:hover,
-  &:focus {
-    background: #e5e7eb;
-    color: #1f2937;
+  &:hover {
+    background: #7dd3fc;
+    color: #082f49;
   }
 }
 
 app-logout {
   display: inline-block;
-}
-
-@media (max-width: 640px) {
-  .navbar {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .navbar-list {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  app-logout {
-    margin-left: auto;
-  }
 }
