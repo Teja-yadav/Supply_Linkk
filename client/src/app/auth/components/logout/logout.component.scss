@@ -1,0 +1,30 @@
+.logout-container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  padding: 8px 14px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+
+  &:hover {
+    background-color: #dc2626;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+@media (max-width: 480px) {
+  .logout-container {
+    justify-content: center;
+  }
+}
